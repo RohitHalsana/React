@@ -1,8 +1,6 @@
 import { useState } from "react"
-
 function App() {
-  const [color, setColor] = useState("green")
-  
+  const [color, setColor] = useState("green")  
   return (
     <div className="w-full h-screen duration-300"
     style ={{ backgroundColor: color }} >
@@ -41,5 +39,4 @@ function App() {
     </div>
   )
 }
-
 export default App
