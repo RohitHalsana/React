@@ -38,7 +38,6 @@ function App() {
     }, 1000);    
     // alert("copied")
   },[password])
-
   // passwordGenerator()
   useEffect(() => {
     passwordGenerator()
