@@ -1,13 +1,15 @@
 import React, {useState, useEffect } from 'react'
+import { useLoaderData } from 'react-router';
 
 const Github = () => {
 
-  const [data, setData] = useState({})
-   useEffect(() => {
-      fetch('https://api.github.com/users/rohithalsana')
-    .then((res) => res.json())
-    .then((res) => setData(res))
-    }, [])
+  // const [data, setData] = useState({})
+  //  useEffect(() => {
+  //     fetch('https://api.github.com/users/rohithalsana')
+  //   .then((res) => res.json())
+  //   .then((res) => setData(res))
+  //   }, [])
+  const data = useLoaderData();
 
   return (
    

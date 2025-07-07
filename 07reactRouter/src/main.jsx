@@ -13,6 +13,7 @@ import Github from './components/Github/Github.jsx'
 import Login from './components/Login/Login.jsx'
 import Register from './components/Register/Register.jsx'
 import User from './components/User/User.jsx'
+import { Loader } from './components/Loader/Loader.jsx'
 
 
 const router = createBrowserRouter([
@@ -34,7 +35,8 @@ const router = createBrowserRouter([
       },
       {
         path: "github",
-        element: <Github/>
+        element: <Github/>,
+        loader: Loader,
       },
       {
         path: "login",
